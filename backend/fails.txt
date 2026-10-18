@@ -1,0 +1,8 @@
+  [FAIL] [0] GET /doctors/specialization/General Physician
+         detail: {'error': "URL can't contain control characters. '/doctors/specialization/General Physician' (found at least ' ')"}
+  [FAIL] [422] POST /sync/patient-records (first sync)  =>  records_synced: MISSING
+         detail: {'detail': [{'type': 'datetime_from_date_parsing', 'loc': ['body', 'records', 0, 'consultation_date'], 'msg': 'Input should be a valid datetime or date, day value is outside expected range', 'input': 
+  [FAIL] [422] POST /sync/patient-records (re-sync -> all skipped)  =>  records_skipped: MISSING
+         detail: {'detail': [{'type': 'datetime_from_date_parsing', 'loc': ['body', 'records', 0, 'consultation_date'], 'msg': 'Input should be a valid datetime or date, day value is outside expected range', 'input': 
+  FAILED        : 3
+  3 endpoint(s) FAILED -- check output above.
